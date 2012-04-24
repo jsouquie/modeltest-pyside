@@ -143,7 +143,7 @@ class ModelTest(QObject):
         QVERIFY( flags == Qt.ItemIsDropEnabled or flags == 0 )
         self._model.hasChildren ( QModelIndex() )
         self._model.hasIndex ( 0, 0 )
-        self._model.headerData ( 0, Qt.Horizontal )
+        self._model.headerData ( 0, Qt.Horizontal, Qt.DisplayRole )
         self._model.index ( 0, 0, QModelIndex() )
         self._model.itemData ( QModelIndex() )
         cache = None
